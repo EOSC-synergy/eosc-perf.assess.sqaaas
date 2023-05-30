@@ -1,4 +1,4 @@
 (
-cd github.com/eosc-synergy/eosc-perf &&
+cd github.com/EOSC-synergy/eosc-perf &&
     rst-lint --level warning --format json .
 )
