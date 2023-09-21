@@ -1,76 +1,76 @@
 config:
   credentials: []
   project_repos:
-    github.com/EOSC-synergy/eosc-perf:
-      branch: master
-      repo: https://github.com/EOSC-synergy/eosc-perf
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.11
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/eosc-synergy/eosc-perf:
+      branch: master
+      repo: https://github.com/eosc-synergy/eosc-perf
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/EOSC-synergy/eosc-perf git:
+      github.com/eosc-synergy/eosc-perf git:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-cardinal-walrus.sh
-        container: qc.acc_foggy-champagne-chipmunk
+        - /usr/bin/env sh .sqa/script.lumpy-aqua-lynx.sh
+        container: qc.acc_sickly-cerulean-ibis
   QC.Doc:
     repos:
-      github.com/EOSC-synergy/eosc-perf find_doc_files.py:
+      github.com/eosc-synergy/eosc-perf find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-cinnabar-collie.sh
-        container: qc.doc_bumpy-khaki-burmese
-      github.com/EOSC-synergy/eosc-perf git:
+        - /usr/bin/env sh .sqa/script.shabby-brown-rottweiler.sh
+        container: qc.doc_snoopy-maroon-kakapo
+      github.com/eosc-synergy/eosc-perf git:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-ochre-javanese.sh
-        container: qc.doc_tasty-cobalt-shark
-      github.com/EOSC-synergy/eosc-perf markdownlint:
+        - /usr/bin/env sh .sqa/script.blurry-cinnabar-markhor.sh
+        container: qc.doc_woolly-brass-malamute
+      github.com/eosc-synergy/eosc-perf markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-tangerine-rabbit.sh
-        container: qc.doc_cloudy-linen-lemur
-      github.com/EOSC-synergy/eosc-perf restructuredtext-lint:
+        - /usr/bin/env sh .sqa/script.gimpy-smalt-zebra.sh
+        container: qc.doc_bluesy-azure-terrier
+      github.com/eosc-synergy/eosc-perf restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-rust-squirt.sh
-        container: qc.doc_lovely-aquamarine-hyena
+        - /usr/bin/env sh .sqa/script.gamy-red-buzzard.sh
+        container: qc.doc_nerdy-alizarin-fowl
   QC.Lic:
     repos:
-      github.com/EOSC-synergy/eosc-perf licensee:
+      github.com/eosc-synergy/eosc-perf licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-lilac-macaw.sh
-        container: qc.lic_wiggy-brass-monkey
+        - /usr/bin/env sh .sqa/script.goopy-rust-grouse.sh
+        container: qc.lic_shaky-chartreuse-cuttlefish
   QC.Met:
     repos:
-      github.com/EOSC-synergy/eosc-perf validate_codemeta:
+      github.com/eosc-synergy/eosc-perf validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-denim-goose.sh
-        container: qc.met_tasty-brown-caiman
+        - /usr/bin/env sh .sqa/script.wheezy-firebrick-peccary.sh
+        container: qc.met_beady-aquamarine-liger
   QC.Sec:
     repos:
-      github.com/EOSC-synergy/eosc-perf bandit:
+      github.com/eosc-synergy/eosc-perf bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-cyan-squid.sh
-        container: qc.sec_chummy-russet-dolphin
+        - /usr/bin/env sh .sqa/script.lovely-lilac-reindeer.sh
+        container: qc.sec_leaky-salmon-serval
   QC.Sty:
     repos:
-      github.com/EOSC-synergy/eosc-perf flake8:
+      github.com/eosc-synergy/eosc-perf flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-khaki-molly.sh
-        container: qc.sty_muzzy-cardinal-chinchilla
-      github.com/EOSC-synergy/eosc-perf hadolint:
+        - /usr/bin/env sh .sqa/script.snoopy-lime-dane.sh
+        container: qc.sty_pokey-chocolate-bordeaux
+      github.com/eosc-synergy/eosc-perf hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-salmon-hornet.sh
-        container: qc.sty_tasty-khaki-walrus
-      github.com/EOSC-synergy/eosc-perf jsonlint:
+        - /usr/bin/env sh .sqa/script.wheezy-orchid-gar.sh
+        container: qc.sty_cheeky-carmine-kakapo
+      github.com/eosc-synergy/eosc-perf jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-peach-booby.sh
-        container: qc.sty_sloppy-auburn-tortoise
+        - /usr/bin/env sh .sqa/script.craggy-olivine-dragon.sh
+        container: qc.sty_squeaky-scarlet-yak
   QC.Ver:
     repos:
-      github.com/EOSC-synergy/eosc-perf get_git_tags.py:
+      github.com/eosc-synergy/eosc-perf get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-cardinal-chihuahua.sh
-        container: qc.ver_scummy-black-dane
+        - /usr/bin/env sh .sqa/script.bluesy-viridian-whippet.sh
+        container: qc.ver_hazy-goldenrod-deer
 timeout: 5400
